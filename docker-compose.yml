@@ -1,6 +1,10 @@
 services:
   okvtwo:
     build: .
+    deploy:
+      resources:
+        limits:
+          memory: 4000M
     shm_size: 2.6gb
     ports:
       - "80:80"
